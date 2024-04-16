@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="oracion.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Completar oraciones</title>
+  </head>
+  <body>
+    <header class="header">
+      <i class="bx bx-x" undefined></i>
+      <progress class="barra-progreso" value="65" max="100"></progress>
+      <div class="flex-row iconos-bien-mal">
+        <div class="flex-row">
+          <span class="bien">0</span>
+          <i class="bx bxs-like" style="color: #86469c"></i>
+        </div>
+        <div class="flex-row">
+          <span class="mal">0</span>
+          <i class="bx bxs-dislike" style="color: #fb0000"></i>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <ul class="options-word">
+        <li>used to</li>
+        <li>would</li>
+      </ul>
+      <section class="oracion">
+        <span class="sentence">In the summer, </span>
+        <input class="input-complete" type="text" />
+        <span class="sentence">walk every day</span>
+      </section>
+      <p>¿No sabes que palabra es? Presiona <code>aquí</code></p>
+      <img
+        class="ilustracion"
+        src="../storage/ilustraciones/completed.svg"
+        alt=""
+      />
+    </main>
+  </body>
+</html>

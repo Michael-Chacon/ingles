@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root{
+    /* --color-background: #0F1014;
+    --color-elementes: #15171C;
+    --color-hover: #0F1014;
+    --color-text: #fff; */
+    --color-background: #FAFAFA;
+    --color-elementes: #fff; 
+    --color-hover: #EEEEEE; 
+    --color-text: #202020;
+    --color-pourple: #86469C;
+    --color-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-elementes);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.header{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+
+}
+
+.header i{
+    font-size: 1.8rem;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos-bien-mal{
+    gap: 15px;
+    font-size: 18px;
+}
+
+.bien{
+    color: var(--color-pourple);
+}
+
+.mal{
+    color: red;
+}
+
+/* .main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+
+.main{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.ilustracion{
+    width: 100%;
+}
+
+.form{
+    /* border: 1px solid red; */
+    width: 100%;
+    /* height: 30%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    padding-left: auto;
+}
+
+.input-group label{
+    font-size: 1.4rem;
+}
+
+.input-group input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--color-pourple);
+    /* border: 1px solid #86469C; */
+    padding: 10px 0px;
+    /* border-radius: 10px; */
+    font-size: 1.1rem;
+    width: 80%;
+    font-weight: 400;
+}
+
+.input-group input:focus{
+    /* outline: 2px solid #86469C; */
+    outline: 0;
+}
+
+.input-group input::placeholder{
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+
+}

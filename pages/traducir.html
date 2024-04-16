@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="traducir.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Escribe el verbo</title>
+  </head>
+  <body>
+    <header class="header">
+      <i class="bx bx-x" undefined></i>
+      <progress class="barra-progreso" value="25" max="100"></progress>
+      <div class="flex-row iconos-bien-mal">
+        <div class="flex-row">
+          <span class="bien">0</span>
+          <i class="bx bxs-like" style="color: #86469c"></i>
+        </div>
+        <div class="flex-row">
+          <span class="mal">0</span>
+          <i class="bx bxs-dislike" style="color: #fb0000"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+        <p class="word">Word</p>
+         <p class="show-word">palabra</p> <!-- Esto solo se mostrará si hace click en 'aquí' -->
+        <form class="formulario" action="#">
+            <input class="input-word" type="text" placeholder='Traduce "word"' />
+        </form>
+        <p>¿No sabes que palabra es? Presiona <code>aquí</code></p>
+        <img
+          class="ilustracion"
+          src="../storage/ilustraciones/text field.svg"
+          alt="Elemento"
+        />
+    </main>
+  </body>
+</html>
